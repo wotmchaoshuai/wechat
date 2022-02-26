@@ -165,4 +165,8 @@ export default {
 .goo-search {
   margin-bottom: 3rem;
 }
+.card-body {
+  padding: 0;
+  padding-left: 1rem;
+}
 </style>
