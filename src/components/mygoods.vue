@@ -124,7 +124,7 @@
       </div>
     </div>
     <div class="card card2" style="width: 10rem; height: 15rem">
-      <img src="../assets/img2/3.png" class="card-img-top" alt="..." />
+      <img src="../assets/img2/3.png" class="card-img-top" />
       <div class="card-body">
         <p class="card-text">篮球</p>
         <p class="card-text">库存:6</p>
@@ -146,9 +146,7 @@ export default {
   padding: 2rem;
   padding-bottom: 3.5rem;
 }
-.card-img-top {
-  padding: 1rem;
-}
+
 .card-text {
   padding: 0;
   margin: 0;
@@ -157,6 +155,7 @@ export default {
   float: left;
   border-radius: 1rem;
   margin-bottom: 2rem;
+  padding: 1rem;
 }
 
 .card2 {
@@ -166,7 +165,13 @@ export default {
   margin-bottom: 3rem;
 }
 .card-body {
+  margin-top: 1rem;
   padding: 0;
-  padding-left: 1rem;
+}
+.card-img-top {
+  display: block;
+  height: 7.8rem;
+  width: 7.8rem;
+  margin: 0 auto;
 }
 </style>
