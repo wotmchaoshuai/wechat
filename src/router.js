@@ -5,18 +5,21 @@ import Main from './components/main.vue'
 import Home from './components/myhome.vue'
 import Goods from './components/mygoods.vue'
 import User from './components/myuser.vue'
+import Sports from './components/main-mysports.vue'
 
 const router = createRouter({
     history: createWebHashHistory(),
     routes: [
-        { path: '/', redirect: '/login' },
+        { path: '/', redirect: '/main/home' },
         { path: '/login', component: Login },
         {
             path: '/main', component: Main, redirect: '/main/home',
             children: [
                 { path: 'home', component: Home },
                 { path: 'goods', component: Goods },
+                { path: 'sport', component: Sports },
                 { path: 'user', component: User },
+
             ]
         },
     ],

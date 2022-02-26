@@ -1,12 +1,8 @@
 <template>
   <div class="mybottom">
     <nav>
-      <div class="nav nav-fill">
-        <router-link
-          class="nav-link active btn-outline-info"
-          data-toggle="tab"
-          to="/main/home"
-        >
+      <div class="nav nav-pills nav-fill">
+        <router-link class="nav-link active" data-toggle="tab" to="/main/home">
           <img
             src="../assets/img/house.svg"
             alt="Bootstrap"
@@ -14,11 +10,7 @@
             height="25"
           />
         </router-link>
-        <router-link
-          class="nav-link btn-outline-info"
-          data-toggle="tab"
-          to="/main/goods"
-        >
+        <router-link class="nav-link" data-toggle="tab" to="/main/goods">
           <img
             src="../assets/img/dribbble.svg"
             alt="Bootstrap"
@@ -26,17 +18,23 @@
             height="25"
           />
         </router-link>
-        <router-link
-          class="nav-link btn-outline-info"
-          data-toggle="tab"
-          to="/main/user"
-        >
+        <router-link class="nav-link" data-toggle="tab" to="/main/sport">
           <img
-            src="../assets/img/person.svg"
+            src="../assets/img/clipboard2.svg"
             alt="Bootstrap"
             width="25"
             height="25"
           />
+        </router-link>
+        <router-link class="nav-link" data-toggle="tab" to="/main/user">
+          <div class="b-4">
+            <img
+              src="../assets/img/person.svg"
+              alt="Bootstrap"
+              width="25"
+              height="25"
+            />
+          </div>
         </router-link>
       </div>
     </nav>
@@ -51,6 +49,7 @@ export default {
 
 <style lang="less" scoped>
 .mybottom {
+  background-color: #f8f9fa;
   position: fixed;
   width: 100%;
   bottom: 0;
@@ -60,6 +59,6 @@ export default {
   display: block;
   padding: 0;
   height: 7vh;
-  line-height: 50px;
+  line-height: 7vh;
 }
 </style>
